@@ -19,15 +19,26 @@ describe('HTML and CSS Tests', () => {
         dom.window.document.head.appendChild(styleElement);
     });
 
+//Test for page title
     test('Page title should be "Moving Clouds"', () => {
         const title = dom.window.document.title;
         expect(title).toBe('Moving Clouds');
     });
 
+//Test for container
     test('Container div should exist', () => {
         const container = dom.window.document.querySelector('#container'); //container of all the clouds
         expect(container).not.toBeNull();
         expect(container.id).toBe('container'); // Check the id is container
+    });
+
+//Test for container child -> cloud
+    test('Container should have at least one cloud element', () => {
+        const container = dom.window.document.querySelector('#container');
+        expect(container.children.length).toBeGreaterThan(0); // Ensure at least one child exists
+
+        const clouds = container.querySelectorAll('.cloud');// Check if the container has elements with class="cloud"
+        expect(clouds.length).toBeGreaterThan(0); // Ensure at least one cloud exists
     });
 
 });
