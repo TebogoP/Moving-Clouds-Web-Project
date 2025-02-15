@@ -23,4 +23,11 @@ describe('HTML and CSS Tests', () => {
         const title = dom.window.document.title;
         expect(title).toBe('Moving Clouds');
     });
+
+    test('Container div should exist', () => {
+        const container = dom.window.document.querySelector('#container'); //container of all the clouds
+        expect(container).not.toBeNull();
+        expect(container.id).toBe('container'); // Check the id is container
+    });
+
 });
