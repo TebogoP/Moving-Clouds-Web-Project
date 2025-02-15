@@ -1,3 +1,9 @@
 body{
     margin: 0px;
 }
+#container {
+    height: 100vh;
+    position: relative;
+    background-color: blue;
+    overflow: hidden;
+}
