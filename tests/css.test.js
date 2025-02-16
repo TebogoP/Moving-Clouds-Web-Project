@@ -81,4 +81,23 @@ describe('CSS Tests', () => {
         });
 
     });
+
+// CSS Test for class cloudBubble1
+    // CSS Test for every cloud width, height, border-radius, background-color, position and margin
+    test('every .cloudBubble1 element should have correct styles', () => {
+        const cloudbubbles = dom.window.document.querySelectorAll('.cloudBubble1');// Select all .cloudBubble1 elements
+        expect(cloudbubbles.length).toBeGreaterThan(0);// Ensure there is at least one .cloudBubble1 element
+
+        cloudbubbles.forEach((bubble) => {// Iterate over each .cloud element
+            const styles = dom.window.getComputedStyle(bubble); // Get the computed styles of the current cloud
+            expect(styles.width).toBe('100px'); // Check the width
+            expect(styles.height).toBe('100px');// Check the height
+            expect(styles.backgroundColor).toBe('rgb(255, 255, 255)');// Check the background color (in rgb format) White
+            expect(styles.borderRadius).toBe('50px');// Check the border radius
+            expect(styles.position).toBe('absolute');// Check the position
+            expect(styles.top).toBe('-50px');// Check the top
+            expect(styles.left).toBe('30px');// Check the left
+        });
+
+    });
 });
