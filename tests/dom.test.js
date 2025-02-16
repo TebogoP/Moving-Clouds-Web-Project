@@ -52,5 +52,17 @@ describe('HTML and CSS Tests', () => {
         expect(cloudbubble.length).toBeGreaterThan(0); // Ensure at least one cloudBubble1 exists
 
     });
+    //Test for container grandchild -> cloudBubble2
+    test('Container should have at least one cloudBubble2 element', () => {
+        const container = dom.window.document.querySelector('#container');
+        expect(container.children.length).toBeGreaterThan(0); // Ensure at least one child exists
+
+        const clouds = container.querySelectorAll('.cloud');// Check if the container has elements with class="cloud"
+        expect(clouds.length).toBeGreaterThan(0); // Ensure at least one cloud exists
+
+        const cloudbubble = clouds[0].querySelectorAll('.cloudBubble2');// Check if the container has elements with class="cloudBubble2"
+        expect(cloudbubble.length).toBeGreaterThan(0); // Ensure at least one cloudBubble2 exists
+
+    });
 
 });
