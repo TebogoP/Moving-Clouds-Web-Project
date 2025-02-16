@@ -83,7 +83,7 @@ describe('CSS Tests', () => {
     });
 
 // CSS Test for class cloudBubble1
-    // CSS Test for every cloud width, height, border-radius, background-color, position and margin
+    // CSS Test for every cloud width, height, border-radius, background-color, position  top and left
     test('every .cloudBubble1 element should have correct styles', () => {
         const cloudbubbles = dom.window.document.querySelectorAll('.cloudBubble1');// Select all .cloudBubble1 elements
         expect(cloudbubbles.length).toBeGreaterThan(0);// Ensure there is at least one .cloudBubble1 element
@@ -97,6 +97,24 @@ describe('CSS Tests', () => {
             expect(styles.position).toBe('absolute');// Check the position
             expect(styles.top).toBe('-50px');// Check the top
             expect(styles.left).toBe('30px');// Check the left
+        });
+    });
+
+// CSS Test for class cloudBubble2
+    // CSS Test for every cloud width, height, border-radius, background-color, position, top and right
+    test('every .cloudBubble2 element should have correct styles', () => {
+        const cloudbubbles = dom.window.document.querySelectorAll('.cloudBubble2');// Select all .cloudBubble2 elements
+        expect(cloudbubbles.length).toBeGreaterThan(0);// Ensure there is at least one .cloudBubble2 element
+
+        cloudbubbles.forEach((bubble) => {// Iterate over each .cloud element
+            const styles = dom.window.getComputedStyle(bubble); // Get the computed styles of the current cloud
+            expect(styles.width).toBe('60px'); // Check the width
+            expect(styles.height).toBe('60px');// Check the height
+            expect(styles.backgroundColor).toBe('rgb(255, 255, 255)');// Check the background color (in rgb format) White
+            expect(styles.borderRadius).toBe('30px');// Check the border radius
+            expect(styles.position).toBe('absolute');// Check the position
+            expect(styles.top).toBe('-30px');// Check the top
+            expect(styles.right).toBe('30px');// Check the right
         });
 
     });
