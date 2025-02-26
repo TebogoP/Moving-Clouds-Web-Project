@@ -31,8 +31,9 @@ describe('JS Tests', () => {
     expect(cloud).not.toBeNull();// Ensure the cloud element exists
 
     const styles = dom.window.getComputedStyle(cloud); // Get the computed styles of the cloud
-    expect(styles.left).toBe('10px');// Check that the left  property is set to 10px
-    expect(styles.top).toBe('10px');// Check that the top property is set to 10px
+    expect(styles.left).toBe('-50%');// Check that the left  property is set to 10px
+   // Top is now random so this won't work anymore
+   // expect(styles.top).toBe('10px');// Check that the top property is set to 10px
     });
 
 });
