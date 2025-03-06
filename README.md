@@ -31,3 +31,28 @@ Moving-Clouds-Web-Project/
 ├── package.json
 └── README.md
 ```
+## Getting Started
+### Prerequisites
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- Basic knowledge of HTML and CSS
+- Text editor or IDE (Visual Studio Code, Sublime Text, etc.)
+- Node.js and npm for running tests
+
+### Installation
+1. Clone or download this repository:
+```
+git clone https://github.com/TebogoP/Moving-Clouds-Web-Project.git
+```
+2. Navigate to the project directory:
+```
+cd Moving-Clouds-Web-Project
+```
+3. Install dependencies:
+
+```
+npm install
+```
+4. Open index.html in your browser to view the project:
+```
+open index.html
+```
