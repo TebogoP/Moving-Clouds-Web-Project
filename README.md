@@ -94,8 +94,6 @@ The project uses a combination of HTML and CSS to create a static cloud structur
 - Cloud shapes are created using nested div elements.
 - Example structure:
 ```
-html
-Copy
 <div id="container">
   <div class="cloud">
     <div class="cloudBubble1"></div>
@@ -122,3 +120,17 @@ Copy
 3. JavaScript:
 - The script.js file is currently minimal and does not include animations.
 - Future enhancements could include JavaScript-based animations.
+
+## Customization
+- You can customize various aspects of the project:
+- Adjust the cloud shapes and sizes in styles.css
+- Modify the color palette in styles.css
+- Add or remove cloud layers in index.html
+- Implement additional interactive features using JavaScript
+
+## Future Enhancements
+- Add JavaScript-based animations for moving clouds
+- Implement a day/night cycle with changing sky colors
+- Add weather effects (rain, snow)
+- Create lightning effects during storm simulation
+- Add sound effects for immersive experience
