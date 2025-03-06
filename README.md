@@ -69,3 +69,19 @@ npm test tests/css.test.js
 npm test tests/dom.test.js
 npm test tests/script.test.js
 ```
+## Testing Overview
+The project includes three main test files:
+
+1. CSS Tests (css.test.js)
+- Verifies proper styling of body, container, and cloud elements
+- Tests for correct dimensions, positioning, and colors
+- Ensures responsive design principles are followed
+
+2. DOM Tests (dom.test.js)
+- Verifies HTML structure and element existence
+- Tests for proper element hierarchy and relationships
+- Ensures all required elements are present
+
+3. JavaScript Tests (script.test.js)
+- Tests JavaScript functionality and DOM manipulation
+- Verifies proper initialization of cloud positions
