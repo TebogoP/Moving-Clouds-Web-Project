@@ -1,0 +1,31 @@
+{
+  "name": "moving-clouds-web-project",
+  "version": "1.0.0",
+  "description": "A web project using HTML, CSS, and JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TebogoP/Moving-Clouds-Web-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TebogoP/Moving-Clouds-Web-Project/issues"
+  },
+  "homepage": "https://github.com/TebogoP/Moving-Clouds-Web-Project#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^26.0.0",
+    "puppeteer": "^24.2.1",
+    "text-encoding": "^0.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": ["./jest.setup.js"]
+  }
+}
