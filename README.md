@@ -134,3 +134,13 @@ The project uses a combination of HTML and CSS to create a static cloud structur
 - Add weather effects (rain, snow)
 - Create lightning effects during storm simulation
 - Add sound effects for immersive experience
+
+## Author
+
+**Tebogo Phiri**
+- GitHub: [TebogoP](https://github.com/TebogoP/)
+- LinkedIn: [Tebogo Phiri](https://www.linkedin.com/in/tebogo-phiri-b5a96796/)
+
+## License
+
+This project is licensed under the MIT License.
