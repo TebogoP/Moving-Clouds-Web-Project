@@ -56,3 +56,16 @@ npm install
 ```
 open index.html
 ```
+### Running Tests
+The project includes a test suite to ensure proper functionality:
+
+1. Run all tests:
+```
+npm test
+```
+2. Run specific test files:
+```
+npm test tests/css.test.js
+npm test tests/dom.test.js
+npm test tests/script.test.js
+```
