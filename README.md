@@ -85,3 +85,40 @@ The project includes three main test files:
 3. JavaScript Tests (script.test.js)
 - Tests JavaScript functionality and DOM manipulation
 - Verifies proper initialization of cloud positions
+
+## How It Works
+The project uses a combination of HTML and CSS to create a static cloud structure:
+
+1. HTML Structure:
+- A container (#container) holds the cloud elements.
+- Cloud shapes are created using nested div elements.
+- Example structure:
+```
+html
+Copy
+<div id="container">
+  <div class="cloud">
+    <div class="cloudBubble1"></div>
+    <div class="cloudBubble2"></div>
+  </div>
+</div>
+```
+
+2. CSS Styling:
+- Cloud shapes are styled using border-radius and background-color.
+- Absolute positioning is used to place the cloud elements.
+- Example CSS:
+```
+.cloud {
+  width: 200px;
+  height: 80px;
+  background-color: white;
+  border-radius: 40px;
+  position: absolute;
+  margin: 100px;
+}
+```
+
+3. JavaScript:
+- The script.js file is currently minimal and does not include animations.
+- Future enhancements could include JavaScript-based animations.
